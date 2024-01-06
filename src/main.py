@@ -3,20 +3,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 plt.rcParams["figure.dpi"] = 150
-from track import track
+from track import track_x, track_y
+from track_incline import dy_dx
 
 
-fig, ax = plt.subplots(1, 1)
-
-x = [i[0] for i in track]
-y = [i[1] for i in track]
+fig, ax = plt.subplots(2, 1, sharex=True)
 
 
-# Plot de data in het rechter assenstelsel
-ax.plot(x, y)
-ax.set_ylim([-0.1, 4])
-ax.set_xlabel("Lengte (m)")
-ax.set_ylabel("Hoogte (m)")
-ax.set_title("Baan")
+# Plot de baan
+ax[0].plot(track_x, track_y)
+ax[0].set_ylabel("Hoogte (m)")
+ax[0].set_title("Baan")
+
+
+# Plot de baan helling
+ax[1].plot(track_x, dy_dx, color="green")
+ax[1].set_xlabel("Afstand (m)")
+ax[1].set_ylabel("Baan helling ($\\Delta$ m)")
 
 plt.show()
