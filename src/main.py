@@ -27,7 +27,7 @@ ax[1].set_ylabel("Normaal kracht (N)")
 
 # Plot het maximale wielkoppel
 ax[2].plot(track_x, wheel_torque, color="orange")
-ax[2].set_ylabel("Wiel Koppel (N/m)")
+ax[2].set_ylabel("Wiel Koppel (Nm)")
 
 
 ax[-1].set_xlabel("Afstand (m)")
