@@ -1,6 +1,6 @@
 # WOP 2: maximale koppel
 
-Dit scriptje geeft een doormiddel van wat paramaters (te vinden in elke functie specifieke bestand; bijvoorbeeld `src/normal_force.py`) een berekeningen voor de maximale koppel, per punt van de baan.
+Dit scriptje geeft doormiddel van wat parameters (te vinden in elke functie specifieke bestand; bijvoorbeeld `src/normal_force.py`) een berekeningen voor de maximale koppel, per punt van de baan.
 
 # Hoe te gebruiken?
 
